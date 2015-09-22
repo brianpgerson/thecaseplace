@@ -1,0 +1,86 @@
+html {
+    font-family: 'Cutive', serif;
+
+}
+
+textarea {
+	vertical-align: top;
+	width: 500px;
+	height: 3em;
+	display: block;
+	position: relative;
+	margin: 0 auto 10px;
+	font-family: 'Cutive', serif;
+    background-color: rgba(0, 0, 0, .05);
+    border: black;
+    font-size: 1em;
+    padding: 10px;
+}
+::-webkit-input-placeholder {
+   color: #444;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #444;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #444;  
+}
+
+:-ms-input-placeholder {  
+   color: #444;  
+}
+
+.myButton {
+	background-color: rgba(0, 0, 0, .2);
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-size:17px;
+	padding:5px 8px;
+	text-decoration:none;
+	font-size: 1em;
+    box-shadow: 2px 2px 2px #888888;
+}
+.myButton:hover {
+	background-color:#fff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+h1 {
+	font-size: 3em;
+	color: black;
+	text-align: center;
+	margin-top: 150px;
+	color: #444;
+}
+
+.contentWrapper {
+	margin-top: 50px;
+}
+
+.buttonContainer {
+	display: block;
+	margin: 20px auto;
+	width: 445px;
+	position: relative;
+}
+
+body {
+	background-image: url("background2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+}
+
+.clearfix {
+	clear: both;
+}

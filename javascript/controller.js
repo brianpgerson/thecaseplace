@@ -17,9 +17,6 @@ Controller.prototype.titleCase = function(){
 	var string = this.view.getString();
 	var results = [];
 	var split = string.toLowerCase().match(/\W|\w+/g);
-	if (split[0] == undefined) {
-		split.unshift()
-	}
 	results.push(split[0].split("")[0].toUpperCase() + split[0].slice(1));
 	for (i = 1; i < split.length; i++){
 		if (split[i] == "") {

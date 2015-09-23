@@ -16,7 +16,7 @@ Controller.prototype.bindEventListeners = function() {
 Controller.prototype.titleCase = function(){
 	var string = this.view.getString();
 	var results = [];
-	var split = string.toLowerCase().match(/\W|\w+'\w|\w+/g);
+	var split = string.toLowerCase().match(/\W|\w+'\w+|\w+/g);
 	results.push(split[0].split("")[0].toUpperCase() + split[0].slice(1));
 	for (i = 1; i < split.length; i++){
 		if (split[i] == "") {

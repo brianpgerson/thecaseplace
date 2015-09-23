@@ -16,11 +16,14 @@ Controller.prototype.bindEventListeners = function() {
 Controller.prototype.titleCase = function(){
 	var string = this.view.getString();
 	var results = [];
-	var split = string.toLowerCase().split(" ");
+	var split = string.toLowerCase().match(/\W|\w+/g);
+	if (split[0] == undefined) {
+		split.unshift()
+	}
 	results.push(split[0].split("")[0].toUpperCase() + split[0].slice(1));
 	for (i = 1; i < split.length; i++){
 		if (split[i] == "") {
-
+			console.log("not real");
 		}
 		else if (this.model.prepositions.indexOf(split[i]) < 0) {
 			results.push(split[i].split("")[0].toUpperCase() + split[i].slice(1));
@@ -29,7 +32,7 @@ Controller.prototype.titleCase = function(){
 
 		}
 	}
-	this.view.updateString(results.join(" "));
+	this.view.updateString(results.join(""));
 }
 
 Controller.prototype.lowerCase = function(){
